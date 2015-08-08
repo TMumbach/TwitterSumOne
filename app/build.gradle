@@ -26,6 +26,5 @@ dependencies {
     compile 'com.google.android.gms:play-services:7.0.0'
     compile 'org.twitter4j:twitter4j-core:4.0.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.makeramen:roundedimageview:2.1.2'
     compile 'com.ocpsoft:ocpsoft-pretty-time:1.0.6'
 }
