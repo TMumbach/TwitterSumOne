@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerContent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageViewBanner" />
+
+    <LinearLayout
+        android:padding="@dimen/view_default_padding"
+        android:orientation="vertical"
+        android:background="@color/darkTransparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <br.com.sumone.sumonetwitter.widget.CircularImageView
+            android:src="@drawable/default_image"
+            android:layout_width="@dimen/image_profile_size"
+            android:layout_height="@dimen/image_profile_size"
+            android:id="@+id/imageViewUserProfile"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/view_default_padding"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Tiago"
+                android:textColor="@android:color/white"
+                android:id="@+id/textViewUserName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Tiago"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:id="@+id/textViewTwitterName"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/view_default_padding"
+            android:id="@+id/profileNumbersInfo"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_above="@+id/sliding_tabs"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewTweets"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="61" />
+
+                <TextView
+                    android:id="@+id/textViewNumberPost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tweets"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewFollowers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="222" />
+
+                <TextView
+                    android:id="@+id/textViewFollowersNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="@string/followers"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewFollowing"
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:text="237" />
+
+                <TextView
+                    android:id="@+id/textViewFollowingNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/following"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

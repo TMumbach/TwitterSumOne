@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+    <br.com.sumone.sumonetwitter.widget.CircularImageView
+        android:src="@drawable/default_image"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="16dp"
+        android:layout_width="@dimen/image_profile_size"
+        android:layout_height="@dimen/image_profile_size"
+        android:id="@+id/imageViewUser"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/imageViewUser"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiago Mumbach"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:id="@+id/textViewUserName" />
+
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="tiagomumbach"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@android:color/darker_gray"
+            android:id="@+id/textViewScreenName" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="asdas"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/textViewTimeAgo"
+        android:layout_alignTop="@+id/linearLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serão avaliados: apenas a organização do código, uso das ferramentas disponíveis, conhecimento e domínio sobre as linguagens e a capacidade de implementação das especificações"
+        android:id="@+id/textViewTweetText"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout" />
+
+
+</RelativeLayout>
