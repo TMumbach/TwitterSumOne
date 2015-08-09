@@ -12,8 +12,8 @@ Android Studio -> CVS -> Checkout from Version Control -> GitHub
 * Plataforma: Android (4.4 ou superior)
 
 ##Bibliotecas
-* Pretty Time
-* Squareup Picasso
-* Twitter4j
-* Maps V2
+* Pretty Time (http://www.ocpsoft.org/prettytime/)
+* Squareup Picasso (https://github.com/square/picasso)
+* Twitter4j (http://twitter4j.org/)
+* Google Maps V2 (https://developers.google.com/maps/documentation/android/)
 * CircularImageView (https://github.com/Pkmmte/CircularImageView)
