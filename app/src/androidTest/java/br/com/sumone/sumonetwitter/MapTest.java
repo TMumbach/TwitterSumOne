@@ -26,6 +26,9 @@ public class MapTest extends TestCase {
     public void locationByAddress() {
         LatLng locationFromAddress = TweetMapFragment.getLocationFromAddress(getTestContext(), "São José, Santa catarina - Brasil");
         assertNotNull(locationFromAddress);
+
+        locationFromAddress = TweetMapFragment.getLocationFromAddress(getTestContext(), "Florianópolis, Santa catarina - Brasil");
+        assertNotNull(locationFromAddress);
     }
 
     @Override
