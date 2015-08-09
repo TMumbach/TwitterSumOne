@@ -1,11 +1,15 @@
 package br.com.sumone.sumonetwitter.login;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
+import android.widget.Toast;
 
 import br.com.sumone.sumonetwitter.R;
 import br.com.sumone.sumonetwitter.base.BaseActivity;
@@ -29,6 +33,11 @@ public class LoginActivity extends BaseActivity {
                 .setDuration(400)
                 .start();
 
+        if(!isConnected()) {
+            Toast.makeText(this, R.string.no_connection, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         if (sharedPreferences.getBoolean(Constants.PREF_KEY_TWITTER_IS_LOGGED_IN, false)) {
             Intent intent = new Intent(this, HomeActivity.class);
@@ -38,6 +47,11 @@ public class LoginActivity extends BaseActivity {
     }
 
     public void login(View v) {
+        if(!isConnected()) {
+            Toast.makeText(this, R.string.no_connection, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         new TwitterLoginTask().execute();
     }
 
@@ -63,5 +77,18 @@ public class LoginActivity extends BaseActivity {
                 startActivity(intent);
             }
         }
+    }
+
+    public boolean isConnected() {
+        ConnectivityManager connective = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if(connective != null) {
+            NetworkInfo[] info = connective.getAllNetworkInfo();
+            if(info != null){
+                for(int i = 0; i < info.length; i++)
+                    if(info[i].getState()== NetworkInfo.State.CONNECTED)
+                        return true;
+            }
+        }
+        return false;
     }
 }

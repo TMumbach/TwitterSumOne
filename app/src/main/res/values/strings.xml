@@ -12,6 +12,7 @@
     <string name="following">Seguindo</string>
     <string name="followers">Seguidores</string>
     <string name="exit">Sair</string>
+    <string name="no_connection">Sem conexão com a internet</string>
 
 
     <string name="open">Open</string>
