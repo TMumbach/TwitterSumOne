@@ -16,3 +16,4 @@ Android Studio -> CVS -> Checkout from Version Control -> GitHub
 * Squareup Picasso
 * Twitter4j
 * Maps V2
+* CircularImageView (https://github.com/Pkmmte/CircularImageView)
