@@ -36,13 +36,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:text="Tiago"
                 android:textColor="@android:color/white"
                 android:id="@+id/textViewUserName" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:text="Tiago"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
                 android:id="@+id/textViewTwitterName"/>
@@ -73,8 +71,7 @@
                     android:id="@+id/textViewTweets"
                     android:textColor="@android:color/white"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="61" />
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:id="@+id/textViewNumberPost"
@@ -98,8 +95,7 @@
                     android:id="@+id/textViewFollowers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:text="222" />
+                    android:textColor="@android:color/white" />
 
                 <TextView
                     android:id="@+id/textViewFollowersNumber"
@@ -122,8 +118,7 @@
                     android:id="@+id/textViewFollowing"
                     android:layout_width="wrap_content"
                     android:textColor="@android:color/white"
-                    android:layout_height="wrap_content"
-                    android:text="237" />
+                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:id="@+id/textViewFollowingNumber"
